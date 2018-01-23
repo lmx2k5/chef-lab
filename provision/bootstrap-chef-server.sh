@@ -4,8 +4,7 @@ apt-get update -y -qq > /dev/null
 apt-get upgrade -y -qq > /dev/null
 apt-get -y -q install linux-headers-$(uname -r) build-essential > /dev/null
 
-wget -P /tmp https://packages.chef.io/files/stable/chef-server/12.17.15/ubuntu/14.04/chef-server-core_12.17.15-1_amd64.deb > /dev/null
-dpkg -i /tmp/chef-server-core_12.17.15-1_amd64.deb
+dpkg -i /vagrant/chef-server-core_amd64.deb
 
 chown -R vagrant:vagrant /home/vagrant
 

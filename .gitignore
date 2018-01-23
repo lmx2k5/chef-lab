@@ -7,7 +7,7 @@ tags
 *~
 .chef
 *.zip
-
+*.deb
 # You should check in your Gemfile.lock in applications, and not in gems
 external_tests/*.lock
 /Gemfile.local
