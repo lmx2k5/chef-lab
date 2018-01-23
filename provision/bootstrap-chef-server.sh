@@ -18,9 +18,9 @@ chef-server-ctl install chef-manage
 chef-server-ctl reconfigure
 chef-manage-ctl reconfigure --accept-license
 
-chef-server-ctl install opscode-reporting
-chef-server-ctl reconfigure
-opscode-reporting-ctl reconfigure --accept-license
+#chef-server-ctl install opscode-reporting
+#chef-server-ctl reconfigure
+#opscode-reporting-ctl reconfigure --accept-license
 
 
 # configure hosts file for our internal network defined by Vagrantfile
