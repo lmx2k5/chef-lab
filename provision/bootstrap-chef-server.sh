@@ -4,8 +4,8 @@ apt-get update -y -qq > /dev/null
 apt-get upgrade -y -qq > /dev/null
 apt-get -y -q install linux-headers-$(uname -r) build-essential > /dev/null
 
-wget -P /tmp https://packages.chef.io/stable/ubuntu/14.04/chef-server-core_12.11.1-1_amd64.deb > /dev/null
-dpkg -i /tmp/chef-server-core_12.11.1-1_amd64.deb
+wget -P /tmp https://packages.chef.io/files/stable/chef-server/12.17.15/ubuntu/14.04/chef-server-core_12.17.15-1_amd64.deb > /dev/null
+dpkg -i /tmp/chef-server-core_12.17.15-1_amd64.deb
 
 chown -R vagrant:vagrant /home/vagrant
 
@@ -29,8 +29,9 @@ cat >> /etc/hosts <<EOL
 # vagrant environment nodes
 10.0.15.10  chef-server
 10.0.15.15  lb
-10.0.15.22  web1
-10.0.15.23  web2
+10.0.15.22  node1
+10.0.15.23  node2
+10.0.15.24  node3
 EOL
 
 printf "\033c"
